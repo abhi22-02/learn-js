@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>check or add - after even number</title>
+</head>
+<body>
+
+  <script>
+    const num=prompt('Enter the value');
+    let value=num.toString();
+    console.log(value);
+    for(i=0;i<value.length;i++)
+    {
+      if(value % 2 == 0)
+      {
+        console.log(value.replace('-',value));
+      } 
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    function celsiusTOfahrenheit(celsius)
+    {
+      return (celsius * 9/5) + 32;
+    }
+    
+    function fahrenheitTocelsius(fahrenheit)
+    {
+      return (fahrenheit -32) * 5/9;
+    }
+
+    const temp=parseFloat(prompt('Enter the Temperature:'))
+    const unit=prompt('Enter the unit(C for celcius , F for fahrenheit)');
+
+    if(unit== 'C')
+    {
+      const result = celsiusTOfahrenheit(temp);
+      alert(`${temp} C =  ${result.toFixed(1) }F`);
+    }
+    else if(unit == 'F')
+    {
+      const result= fahrenheitTocelsius(temp);
+      alert(`${temp} F =  ${result.toFixed(1)} C`);
+    }
+    else
+    {
+      alert('Invalid unit ')
+    }
+  </script>
+</body>
+</html>

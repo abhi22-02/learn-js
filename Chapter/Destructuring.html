@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  let arr=[7, 8, 6, 0,5,7,5,4,3,2];
+  let [a,b, ...rest]=arr;
+  console.log(a,b, rest);
+
+  function sum(v1,v2,v3)
+  {
+    return v1+v2+v3;
+  }
+  console.log(sum(...arr));
+  
+
+</script>  
+</body>
+</html>
+

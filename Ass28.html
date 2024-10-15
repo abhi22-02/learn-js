@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .Season{
+      display: flex;
+      height: 300px;
+      justify-content: space-evenly;
+      margin-top: 20px;
+    }
+    .but{
+      display: inline;
+      height: 40px;
+      margin-top: 20px;
+      width: 100px;
+    }
+    .but-1{
+      margin-left: 260px;
+      border-radius:10px 0 10px 0 ;
+      cursor: pointer;
+      background-color: orange;
+      font-size: large;
+    }
+    .but-2{
+      margin-left: 340px;
+      border-radius:10px 0 10px 0 ;
+      cursor: pointer;
+      font-size: large;
+      background-color: lightblue;
+    }
+    .but-3{
+      margin-left: 360px;
+      border-radius:10px 0 10px 0 ;
+      font-size: large;
+      cursor: pointer;
+      background-color: rgb(78, 99, 218);
+    }
+  </style>
+</head>
+<body>
+    <div class="Season">
+      <img src="sunny.png" alt="off" id="summer">
+      <img src="snowflake.png" alt="off" id="winter">
+      <img src="rainy-day.png" alt="off" id="rainy">
+      </div>
+      <div>
+        <button type="button" onclick="summer()" class="but but-1">Summer</button>
+        <button type="button" onclick="winter()" class="but but-2">Winter</button>
+        <button type="button" onclick="rainny()" class="but but-3">Rainny</button>
+      </div>
+
+
+      <script>
+        const sum=document.getElementById('summer');
+        function summer()
+        {
+          sum.src='softdrink.png';
+          
+        }
+
+        const win=document.getElementById('winter');
+        function winter()
+        {
+          win.src='jacket.png'
+        }
+        
+        const ran=document.getElementById('rainy')
+        function rainny()
+        {
+          ran.src='umbrella.png'
+        }
+      </script>
+</body>
+</html>
