@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .lecture-1{
+      height: 50px;
+      width: 500px;
+      background-color: aqua;
+    }
+    .lecture-2{
+      margin-top: 50px;
+      height: 50px;
+      width: 500px;
+      background-color: tomato;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="lecture-1" onmouseover="lec1()" onclick="clk()" ondblclick="dbclk()">lecture-1</div>
+    <div class="lecture-2" onmouseover="lec2()" >lecture-2</div>
+    <img src="softdrink.png" class="softdrink" onmousemove="omm()">
+    <script>
+      function dbclk()
+      {
+        console.log("Start to watch the session");
+        
+      }
+      function lec1()
+      {
+        console.log("move on lecture")
+      }
+      function clk()
+      {
+        console.log("select the lecture")
+      }
+      function lec2()
+      {
+        console.log("You start session")
+      }
+      function omm()
+      {
+        console.log("move on the image");
+      }
+    </script>
+</body>
+</html>
